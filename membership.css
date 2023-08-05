@@ -1,0 +1,147 @@
+*{
+    font-size: 20px;
+    color: #8C8C8C;
+    transition: all 400ms ease-out;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+h1{
+    color: #666666;
+    text-align: center;
+    margin-top: 16vh;
+    font-size: 35px;
+}
+
+.row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    text-align: left;
+    font-weight: 600;
+    margin-left: 6vw;
+}
+
+.row .col1{
+    display: flex;
+    flex-direction: column;
+}
+
+.row .col2{
+    display: flex;
+    flex-direction: column;
+}
+
+.row .col3{
+    display: flex;
+    flex-direction: column;
+}
+
+.row input{
+    border: 1px solid #7AB262;
+    border-radius: 15px;
+    padding: 15px 35px;
+}
+
+.row input:focus{
+    outline: none;
+}
+
+.row button{
+    background-image: linear-gradient(to right,#66A455,#4B8882);
+    padding: 15px 35px;
+    border-radius: 15px;
+    border: none;
+    color: #F3F3F3;
+    margin-top: 65px;
+}
+
+.row button:focus{
+    outline: none;
+}
+
+#teams{
+    padding: 15px 160px 15px 10px;
+    border-radius: 15px;
+}
+
+#teams:focus{
+    outline: none;
+}
+
+h2{
+    margin-left: 10vw;
+    font-size: 25px;
+}
+
+.linebreaker{
+    width: 80%;
+    background-color: #BFDCB3;
+    height: 1px;
+    margin-left: 10vw;
+}
+
+.edit,.delete,.save{
+    border-radius: 15px;
+    padding: 15px 35px;
+    background-color: #66A455;
+    color: #E5F4EF;
+    border: none;
+    margin: 10px;
+}
+
+.save{
+    display: none;
+}
+
+.edit,.delete,.save:focus{
+    outline: none;
+}
+
+table{
+    margin-top: 40px;
+    margin-left: 10vw;
+}
+
+table,th,td{
+    border: 1px solid #AAAAAA;
+    border-collapse: collapse;
+}
+
+table,th{
+    background-color: #E5F4EF;
+}
+
+table .tcol1{
+    padding: 15px 80px;
+}
+
+table .tcol2{
+    padding: 15px 140px;
+}
+
+table .tcol3{
+    padding: 15px 80px;
+}
+
+table .EnD{
+    padding: 15px 35px;
+}
+
+#row1{
+    display: none;
+}
+@media only screen and (max-width:903px){
+    *{
+        font-size: 15px;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row button{
+        margin-top: 30px;
+    }
+}

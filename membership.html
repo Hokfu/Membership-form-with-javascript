@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="membership.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <title>Membership</title>
+</head>
+<body>
+    <script src="index.js"></script>
+    <section>
+        <h1>YTU SE Team Membership</h1>
+        <div class="row">
+            <div class="col1">
+                <p>Username</p>
+                <input type="text" id="uname">
+            </div>
+            <div class="col2">
+                <p>Name</p>
+                <input type="text" id="realname">
+            </div>
+            <div class="col3">
+                <p>Team</p>
+                <select name="team" id="teams">
+                    <option>FE</option>
+                    <option>BE</option>
+                    <option>DK</option>
+                    <option>All</option>
+                </select>
+            </div>
+            <div class="col4">
+                <button type="submit" onclick="getData()">+Add</button>
+            </div>
+        </div>
+        <h2>List of Members</h2>
+        <p class="linebreaker"></p>
+        <table id="table">
+                <tr>
+                    <th class="tcol1">Username</th>
+                    <th class="tcol2">Name</th>
+                    <th class="tcol3">Team</th>
+                    <th class="EnD">   </th>
+                    <th class="EnD">   </th>
+                </tr>
+                <tr id="row1">
+                    <td id="username1">KHNKHN</td>
+                    <td id="realname1">KHNKHN</td>
+                    <td id="team1">FE</td>
+                    <td><button class="edit" id="edit1" onclick="edit('1')">Edit</button>
+                        <button class="save" id="save1" onclick="save('1')">Save</button>
+                    </td>
+                    <td><button class="delete" id="del1" onclick="del('1')">Delete</button></td>
+                </tr>
+        </table>
+    </section>
+</body>
+</html>
